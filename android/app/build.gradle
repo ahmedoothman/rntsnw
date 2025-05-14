@@ -83,7 +83,7 @@ android {
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0"
     }
     signingConfigs {
         debug {
@@ -103,6 +103,13 @@ android {
             signingConfig signingConfigs.debug
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+        } 
+    }
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            // def newName = "user-${variant.name}-${variant.versionName}.apk"
+            def newName = "rntsnw-v${variant.versionName}.apk"
+            outputFileName = newName
         }
     }
 }
@@ -117,3 +124,4 @@ dependencies {
         implementation jscFlavor
     }
 }
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
