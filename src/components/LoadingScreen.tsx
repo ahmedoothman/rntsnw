@@ -2,14 +2,12 @@ import React, {useEffect, useState, useRef} from 'react';
 import {View, Text, Animated, Easing, StyleSheet} from 'react-native';
 import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
 import LottieView from 'lottie-react-native';
-import {useAppSelector} from '../redux/hooks';
 
 // Import animations
 // Animation files will be required directly in getCurrentAnimation
 
 const LoadingScreen = (): React.JSX.Element => {
   const [animationType, setAnimationType] = useState(1);
-  const {isDarkMode} = useAppSelector(state => state.theme);
   const fadeAnim = useRef(new Animated.Value(0)).current;
   const lottieRef = useRef<LottieView>(null);
 
@@ -71,16 +69,12 @@ const LoadingScreen = (): React.JSX.Element => {
         return 'Loading...';
     }
   };
-
   return (
     <SafeAreaProvider>
       <SafeAreaView className="flex-1 bg-gray-50 dark:bg-gray-900 justify-center items-center">
         <Animated.View
           style={{opacity: fadeAnim}}
-          className={`items-center p-8 rounded-3xl ${
-            isDarkMode ? 'bg-gray-800/40' : 'bg-white/40'
-          } shadow-lg`}>
-          {' '}
+          className="items-center p-8 rounded-3xl bg-white/90 dark:bg-gray-800/40 shadow-lg">
           <View className="w-[200px] h-[200px] items-center justify-center">
             <LottieView
               ref={lottieRef}
@@ -93,16 +87,10 @@ const LoadingScreen = (): React.JSX.Element => {
               hardwareAccelerationAndroid={true}
             />
           </View>
-          <Text
-            className={`mt-4 text-xl font-semibold ${
-              isDarkMode ? 'text-blue-300' : 'text-blue-700'
-            }`}>
+          <Text className="mt-4 text-xl font-semibold text-blue-700 dark:text-blue-300">
             {getLoadingMessage()}
           </Text>
-          <Text
-            className={`text-sm mt-2 ${
-              isDarkMode ? 'text-gray-400' : 'text-gray-500'
-            }`}>
+          <Text className="text-sm mt-2 text-gray-600 dark:text-gray-400">
             Preparing your experience...
           </Text>
         </Animated.View>
