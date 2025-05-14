@@ -6,12 +6,13 @@ import Reanimated, {
   withTiming,
   interpolate,
 } from 'react-native-reanimated';
+import DarkModeToggle from './DarkModeToggle';
 
 type HeaderProps = {
-  isDarkMode: boolean;
+  isDarkMode?: boolean; // Made optional for backward compatibility
 };
 
-const Header: React.FC<HeaderProps> = ({isDarkMode}) => {
+const Header: React.FC<HeaderProps> = () => {
   // Animation values
   const headerAnimation = useSharedValue(0);
 
@@ -19,14 +20,12 @@ const Header: React.FC<HeaderProps> = ({isDarkMode}) => {
     // Initial animation when component mounts
     headerAnimation.value = withTiming(1, {duration: 1000});
   }, [headerAnimation]);
-
   return (
-    <View
-      className={`pt-12 pb-16 px-5 ${
-        isDarkMode
-          ? 'bg-gradient-to-b from-indigo-900 to-gray-900'
-          : 'bg-gradient-to-b from-blue-500/20 to-indigo-500/10'
-      } items-center`}>
+    <View className="pt-12 pb-16 px-5 bg-gradient-to-b from-blue-500/20 to-indigo-500/10 dark:from-indigo-900 dark:to-gray-900 items-center">
+      <View className="absolute top-4 right-4">
+        <DarkModeToggle />
+      </View>
+
       <View className="w-64 h-32 mb-8 relative">
         <View className="absolute inset-0 bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl shadow-2xl transform rotate-3 scale-95" />
         <View className="absolute inset-0 bg-gradient-to-tr from-blue-400 to-indigo-600 rounded-2xl shadow-xl" />
@@ -47,13 +46,10 @@ const Header: React.FC<HeaderProps> = ({isDarkMode}) => {
             },
           ],
         }))}>
-        <Text className="text-4xl font-black text-slate-700 bg-clip-text mb-2 px-2 rounded-lg">
+        <Text className="text-4xl font-black text-slate-700 dark:text-white bg-clip-text mb-2 px-2 rounded-lg">
           RNTSNW
         </Text>
-        <Text
-          className={`text-base tracking-wide font-medium ${
-            isDarkMode ? 'text-gray-300' : 'text-gray-800'
-          }`}>
+        <Text className="text-base tracking-wide font-medium text-gray-800 dark:text-gray-300">
           React Native • TypeScript • NativeWind
         </Text>
       </Reanimated.View>

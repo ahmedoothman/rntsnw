@@ -1,32 +1,34 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 import FeatureCard from './FeatureCard';
+import {useAppSelector} from '../../redux/hooks';
+import {useTranslation} from 'react-i18next';
 
 type FeaturesSectionProps = {
-  isDarkMode: boolean;
+  isDarkMode?: boolean; // Made optional for backward compatibility
 };
 
-const FeaturesSection: React.FC<FeaturesSectionProps> = ({isDarkMode}) => {
+const FeaturesSection: React.FC<FeaturesSectionProps> = () => {
+  // Get isDarkMode from Redux store
+  const {isDarkMode} = useAppSelector(state => state.theme);
+  const {t} = useTranslation();
   const features = [
     {
       icon: '📱',
-      title: 'Cross-Platform',
-      description:
-        'Build once, deploy on both iOS and Android platforms with a unified codebase and consistent experience',
+      title: t('features.items.crossplatform.title'),
+      description: t('features.items.crossplatform.description'),
       cardColor: 'indigo',
     },
     {
       icon: '🎨',
-      title: 'Modern Styling',
-      description:
-        "Use Tailwind's utility-first approach for rapid UI development with clean, maintainable code",
+      title: t('features.items.responsive.title'),
+      description: t('features.items.responsive.description'),
       cardColor: 'purple',
     },
     {
       icon: '🛡️',
-      title: 'Type Safety',
-      description:
-        'TypeScript integration for better development experience with fewer bugs and improved code quality',
+      title: t('features.items.accessibility.title'),
+      description: t('features.items.accessibility.description'),
       cardColor: 'blue',
     },
   ];
@@ -37,14 +39,12 @@ const FeaturesSection: React.FC<FeaturesSectionProps> = ({isDarkMode}) => {
         className={`text-2xl font-bold ${
           isDarkMode ? 'text-white' : 'text-gray-900'
         } mb-6`}>
-        Why Choose RNTSNW?
+        {t('features.title')}
       </Text>
-
       {/* Feature cards with glass effect */}
       {features.map((feature, index) => (
         <FeatureCard
           key={index}
-          isDarkMode={isDarkMode}
           icon={feature.icon}
           title={feature.title}
           description={feature.description}

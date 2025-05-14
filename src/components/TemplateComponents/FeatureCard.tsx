@@ -1,8 +1,9 @@
 import React from 'react';
 import {View, Text} from 'react-native';
+import {useAppSelector} from '../../redux/hooks';
 
 type FeatureCardProps = {
-  isDarkMode: boolean;
+  isDarkMode?: boolean; // Made optional for backward compatibility
   icon: string;
   title: string;
   description: string;
@@ -10,12 +11,14 @@ type FeatureCardProps = {
 };
 
 const FeatureCard: React.FC<FeatureCardProps> = ({
-  isDarkMode,
   icon,
   title,
   description,
   cardColor,
 }) => {
+  // Get isDarkMode from Redux store
+  const {isDarkMode} = useAppSelector(state => state.theme);
+
   const getBgColor = () => {
     switch (cardColor) {
       case 'purple':

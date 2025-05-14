@@ -1,12 +1,18 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 import SocialLink from './SocialLink';
+import {useAppSelector} from '../../redux/hooks';
+import {useTranslation} from 'react-i18next';
 
 type DeveloperProfileProps = {
-  isDarkMode: boolean;
+  isDarkMode?: boolean; // Made optional for backward compatibility
 };
 
-const DeveloperProfile: React.FC<DeveloperProfileProps> = ({isDarkMode}) => {
+const DeveloperProfile: React.FC<DeveloperProfileProps> = () => {
+  // Get isDarkMode from Redux store
+  const {isDarkMode} = useAppSelector(state => state.theme);
+  const {t} = useTranslation();
+
   // Social links data
   const socialLinks = [
     {
@@ -48,13 +54,13 @@ const DeveloperProfile: React.FC<DeveloperProfileProps> = ({isDarkMode}) => {
               className={`text-2xl font-bold ${
                 isDarkMode ? 'text-white' : 'text-gray-900'
               }`}>
-              Ahmed Othman
+              {t('profile.greeting')} Ahmed Othman
             </Text>
             <Text
               className={`${
                 isDarkMode ? 'text-blue-300' : 'text-blue-700'
               } font-medium`}>
-              Mobile & Web Developer
+              {t('profile.title')}
             </Text>
           </View>
         </View>
@@ -62,9 +68,7 @@ const DeveloperProfile: React.FC<DeveloperProfileProps> = ({isDarkMode}) => {
           className={`${
             isDarkMode ? 'text-gray-300' : 'text-gray-800'
           } mb-6 leading-relaxed`}>
-          Passionate about creating beautiful, responsive, and user-friendly
-          mobile and web applications using modern technologies like React
-          Native and Tailwind CSS.
+          {t('profile.bio')}
         </Text>
         {/* Social Links */}
         <View className="mb-2">
@@ -78,7 +82,7 @@ const DeveloperProfile: React.FC<DeveloperProfileProps> = ({isDarkMode}) => {
               className={`text-lg font-bold ${
                 isDarkMode ? 'text-white' : 'text-gray-900'
               }`}>
-              Connect with me:
+              {t('profile.cta')}:
             </Text>
           </View>
 

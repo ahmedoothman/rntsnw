@@ -1,11 +1,18 @@
 import React from 'react';
 import {View, Text} from 'react-native';
+import {useAppSelector} from '../../redux/hooks';
+import {useTranslation} from 'react-i18next';
+import LanguageSelector from './LanguageSelector';
 
 type FooterProps = {
-  isDarkMode: boolean;
+  isDarkMode?: boolean; // Made optional for backward compatibility
 };
 
-const Footer: React.FC<FooterProps> = ({isDarkMode}) => {
+const Footer: React.FC<FooterProps> = () => {
+  // Get isDarkMode from Redux store
+  const {isDarkMode} = useAppSelector(state => state.theme);
+  const {t} = useTranslation();
+
   return (
     <View
       className={`pt-10 pb-8 px-5 items-center ${
@@ -15,11 +22,17 @@ const Footer: React.FC<FooterProps> = ({isDarkMode}) => {
       <View className="w-12 h-12 mb-4 rounded-full bg-blue-600 items-center justify-center shadow-lg">
         <Text className="text-white font-bold text-lg">AO</Text>
       </View>
+
+      {/* Language selector */}
+      <View className="mb-4">
+        <LanguageSelector />
+      </View>
+
       <Text
         className={`font-medium mb-2 ${
           isDarkMode ? 'text-white' : 'text-gray-800'
         }`}>
-        © {new Date().getFullYear()} Ahmed Othman
+        {t('footer.copyright')}
       </Text>
       <Text
         className={`text-sm mb-4 ${
