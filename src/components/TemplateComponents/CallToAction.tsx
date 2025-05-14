@@ -15,7 +15,7 @@ const CallToAction: React.FC<CallToActionProps> = ({
     <View className="px-6 py-10 bg-white dark:bg-gray-900">
       <View className="bg-gradient-to-r from-blue-700 to-indigo-800 dark:from-blue-900 dark:to-indigo-900 rounded-3xl p-7 shadow-xl overflow-hidden relative border border-indigo-500/30 dark:border-indigo-700/30">
         <View className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2" />
-        <View className="absolute bottom-0 left-0 w-20 h-20 bg-white/10 rounded-full translate-y-1/2 -translate-x-1/2" />{' '}
+        <View className="absolute bottom-0 left-0 w-20 h-20 bg-white/10 rounded-full translate-y-1/2 -translate-x-1/2" />
         <Text className="text-2xl font-bold text-slate-600 dark:text-white mb-3 relative z-10">
           {t('cta.title')}
         </Text>

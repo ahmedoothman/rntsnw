@@ -1,7 +1,6 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {useColorScheme} from 'nativewind';
 import {useAppSelector} from '../redux/hooks';
-import {useEffect} from 'react';
 
 type ThemeProviderProps = {
   children: React.ReactNode;
