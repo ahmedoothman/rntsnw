@@ -7,6 +7,7 @@ import {i18nInitializedPromise} from './src/i18n';
 import ThemeProvider from './src/components/ThemeProvider';
 import MainContent from './src/components/MainContent';
 import LoadingScreen from './src/components/LoadingScreen';
+import NotificationContainer from './src/components/NotificationContainer';
 
 import './global.css';
 
@@ -31,6 +32,7 @@ function App(): React.JSX.Element {
     <Provider store={store}>
       <ThemeProvider>
         {!isI18nReady ? <LoadingScreen /> : <MainContent />}
+        <NotificationContainer />
       </ThemeProvider>
     </Provider>
   );
