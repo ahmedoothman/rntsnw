@@ -1,6 +1,5 @@
 import React from 'react';
 import {View, Text} from 'react-native';
-import {useAppSelector} from '../../redux/hooks';
 
 type FeatureCardProps = {
   isDarkMode?: boolean; // Made optional for backward compatibility
@@ -16,60 +15,54 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   description,
   cardColor,
 }) => {
-  // Get isDarkMode from Redux store
-  const {isDarkMode} = useAppSelector(state => state.theme);
+  const getCardClasses = () => {
+    const baseClasses =
+      'mb-4 rounded-2xl p-5 shadow-md bg-white/90 dark:bg-gray-800/90 border border-blue-100';
 
-  const getBgColor = () => {
     switch (cardColor) {
       case 'purple':
-        return isDarkMode
-          ? 'bg-purple-900/50 border border-purple-800'
-          : 'bg-white/90 border border-blue-100';
+        return `${baseClasses} dark:border-purple-800`;
       case 'indigo':
-        return isDarkMode
-          ? 'bg-indigo-900/50 border border-indigo-800'
-          : 'bg-white/90 border border-blue-100';
+        return `${baseClasses} dark:border-indigo-800`;
       default:
-        return isDarkMode
-          ? 'bg-blue-900/50 border border-blue-800'
-          : 'bg-white/90 border border-blue-100';
+        return `${baseClasses} dark:border-blue-800`;
     }
   };
 
-  const getIconBgColor = () => {
+  const getIconClasses = () => {
+    const baseClasses =
+      'w-12 h-12 rounded-full items-center justify-center mb-3';
+
     switch (cardColor) {
       case 'purple':
-        return isDarkMode ? 'bg-purple-800' : 'bg-purple-100';
+        return `${baseClasses} bg-purple-100 dark:bg-purple-800`;
       case 'indigo':
-        return isDarkMode ? 'bg-indigo-800' : 'bg-blue-100';
+        return `${baseClasses} bg-blue-100 dark:bg-indigo-800`;
       default:
-        return isDarkMode ? 'bg-blue-800' : 'bg-blue-100';
+        return `${baseClasses} bg-blue-100 dark:bg-blue-800`;
     }
   };
 
-  const getTitleColor = () => {
+  const getTitleClasses = () => {
+    const baseClasses = 'text-lg font-semibold mb-2';
+
     switch (cardColor) {
       case 'purple':
-        return isDarkMode ? 'text-purple-300' : 'text-purple-700';
+        return `${baseClasses} text-purple-700 dark:text-purple-300`;
       case 'indigo':
-        return isDarkMode ? 'text-blue-300' : 'text-blue-700';
+        return `${baseClasses} text-blue-700 dark:text-blue-300`;
       default:
-        return isDarkMode ? 'text-blue-300' : 'text-blue-700';
+        return `${baseClasses} text-blue-700 dark:text-blue-300`;
     }
   };
 
   return (
-    <View className={`mb-4 rounded-2xl p-5 shadow-md ${getBgColor()}`}>
-      <View
-        className={`w-12 h-12 rounded-full ${getIconBgColor()} items-center justify-center mb-3`}>
+    <View className={getCardClasses()}>
+      <View className={getIconClasses()}>
         <Text className="text-2xl">{icon}</Text>
       </View>
-      <Text className={`text-lg font-semibold ${getTitleColor()} mb-2`}>
-        {title}
-      </Text>
-      <Text className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-        {description}
-      </Text>
+      <Text className={getTitleClasses()}>{title}</Text>
+      <Text className="text-gray-700 dark:text-gray-300">{description}</Text>
     </View>
   );
 };

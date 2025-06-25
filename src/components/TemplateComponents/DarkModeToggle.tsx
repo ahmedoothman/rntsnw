@@ -18,9 +18,7 @@ const DarkModeToggle: React.FC<DarkModeToggleProps> = ({className}) => {
     <View className={`flex-row items-center ${className}`}>
       <TouchableOpacity
         onPress={handleToggle}
-        className={`w-12 h-6 rounded-full p-1 ${
-          isDarkMode ? 'bg-indigo-600' : 'bg-gray-300'
-        }`}>
+        className="w-12 h-6 rounded-full p-1 bg-gray-300 dark:bg-indigo-600">
         <View
           className={`w-4 h-4 rounded-full bg-white shadow-md transform transition-all ${
             isDarkMode ? 'translate-x-6' : 'translate-x-0'

@@ -9,7 +9,6 @@ const LanguageSelector: React.FC = () => {
   const {t} = useTranslation();
   const dispatch = useAppDispatch();
   const {currentLanguage} = useAppSelector(state => state.language);
-  const {isDarkMode} = useAppSelector(state => state.theme);
 
   const handleLanguageChange = (language: string) => {
     dispatch(changeLanguage(language));
@@ -17,27 +16,22 @@ const LanguageSelector: React.FC = () => {
 
   return (
     <View className="flex flex-row items-center gap-2">
-      <Text
-        className={`text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+      <Text className="text-sm text-gray-700 dark:text-gray-300">
         {t('footer.language')}:
       </Text>
       <View className="flex flex-row gap-2">
         <TouchableOpacity
           className={`px-2 py-1 rounded ${
             currentLanguage === LANGUAGES.EN
-              ? isDarkMode
-                ? 'bg-blue-700'
-                : 'bg-blue-500'
-              : isDarkMode
-              ? 'bg-gray-700'
-              : 'bg-gray-200'
+              ? 'bg-blue-500 dark:bg-blue-700'
+              : 'bg-gray-200 dark:bg-gray-700'
           }`}
           onPress={() => handleLanguageChange(LANGUAGES.EN)}>
           <Text
             className={`text-sm font-medium ${
-              currentLanguage === LANGUAGES.EN || isDarkMode
+              currentLanguage === LANGUAGES.EN
                 ? 'text-white'
-                : 'text-gray-800'
+                : 'text-gray-800 dark:text-white'
             }`}>
             English
           </Text>
@@ -45,19 +39,15 @@ const LanguageSelector: React.FC = () => {
         <TouchableOpacity
           className={`px-2 py-1 rounded ${
             currentLanguage === LANGUAGES.AR
-              ? isDarkMode
-                ? 'bg-blue-700'
-                : 'bg-blue-500'
-              : isDarkMode
-              ? 'bg-gray-700'
-              : 'bg-gray-200'
+              ? 'bg-blue-500 dark:bg-blue-700'
+              : 'bg-gray-200 dark:bg-gray-700'
           }`}
           onPress={() => handleLanguageChange(LANGUAGES.AR)}>
           <Text
             className={`text-sm font-medium ${
-              currentLanguage === LANGUAGES.AR || isDarkMode
+              currentLanguage === LANGUAGES.AR
                 ? 'text-white'
-                : 'text-gray-800'
+                : 'text-gray-800 dark:text-white'
             }`}>
             العربية
           </Text>
