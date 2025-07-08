@@ -9,7 +9,6 @@ import {useFirebaseMessaging} from '../hooks/useFirebaseMessaging';
 const AppWrapper: React.FC = () => {
   const {isI18nReady} = useI18nInitialization();
   useFirebaseMessaging();
-  console.log('AppWrapper initialized');
   return (
     <ThemeProvider>
       {!isI18nReady ? <LoadingScreen /> : <MainContent />}

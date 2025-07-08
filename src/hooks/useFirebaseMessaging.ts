@@ -12,14 +12,30 @@ import {
   checkInitialNotification,
 } from '../utils/notificationUtils';
 
+// Reactotron logging helper
+const logToReactotron = (message: string, data?: unknown) => {
+  if (__DEV__) {
+    try {
+      const reactotron = require('../config/ReactotronConfig').default;
+      if (reactotron && reactotron.log) {
+        reactotron.log(message, data);
+      }
+    } catch (error) {
+      console.warn('Reactotron logging failed:', error);
+    }
+  }
+};
+
 export const useFirebaseMessaging = () => {
   const navigationRef =
     useRef<NavigationContainerRef<Record<string, object | undefined>>>(null);
 
   useEffect(() => {
+    logToReactotron('🚀 Firebase Messaging Hook Initialized');
+
     // Initialize Firebase messaging
-    initializeFirebaseMessaging().then(_token => {
-      // Handle token if needed
+    initializeFirebaseMessaging().then(token => {
+      logToReactotron('🔑 Firebase Token Received', {token});
     });
 
     // Create notification channel
@@ -32,11 +48,14 @@ export const useFirebaseMessaging = () => {
 
     // Handle foreground messages
     const unsubscribeForeground = messaging().onMessage(async remoteMessage => {
+      logToReactotron('📱 Foreground Message Received', remoteMessage);
       await handleForegroundMessage(remoteMessage);
     });
 
     // Handle foreground notification events
     const unsubscribeNotifee = notifee.onForegroundEvent(({type, detail}) => {
+      logToReactotron('🔔 Notification Event', {type, detail});
+
       switch (type) {
         case EventType.PRESS:
           if (
@@ -46,6 +65,7 @@ export const useFirebaseMessaging = () => {
           ) {
             const {screen, params} = detail.notification.data;
             if (navigationRef.current && typeof screen === 'string') {
+              logToReactotron('📍 Navigating to screen', {screen, params});
               navigationRef.current.navigate(
                 screen,
                 params as object | undefined,
@@ -66,6 +86,7 @@ export const useFirebaseMessaging = () => {
 
     // Cleanup subscriptions
     return () => {
+      logToReactotron('🧹 Cleaning up Firebase Messaging subscriptions');
       unsubscribeForeground();
       unsubscribeNotifee();
     };
