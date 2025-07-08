@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "932083176394",
+    "project_id": "rntsnwfb",
+    "storage_bucket": "rntsnwfb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:932083176394:android:868e9892966e5456c7b533",
+        "android_client_info": {
+          "package_name": "com.rntsnw"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXKHNJXEdaHLUNJ1hULYZizX7SVz-0tjI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
