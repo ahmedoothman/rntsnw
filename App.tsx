@@ -1,14 +1,14 @@
 import React from 'react';
 import {Provider} from 'react-redux';
 import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
-import {store} from './src/redux/store';
-import AppWrapper from './src/components/AppWrapper';
+import {store} from '@redux/store';
+import AppWrapper from '@components/AppWrapper';
 
 import './global.css';
 
 // Initialize Reactotron in development
 if (__DEV__) {
-  require('./src/config/ReactotronConfig');
+  require('@config/ReactotronConfig');
 }
 
 // Create a client for React Query

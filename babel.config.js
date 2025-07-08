@@ -12,5 +12,27 @@ module.exports = {
         allowUndefined: true,
       },
     ],
+    [
+      'module-resolver',
+      {
+        root: ['./src'],
+        alias: {
+          '@': './src',
+          '@assets': './src/assets',
+          '@components': './src/components',
+          '@screens': './src/screens',
+          '@services': './src/services',
+          '@utils': './src/utils',
+          '@hooks': './src/hooks',
+          '@navigation': './src/navigation',
+          '@redux': './src/redux',
+          '@theme': './src/theme',
+          '@types': './src/types',
+          '@config': './src/config',
+          '@i18n': './src/i18n',
+          '@notifications': './src/notifications',
+        },
+      },
+    ],
   ],
 };
