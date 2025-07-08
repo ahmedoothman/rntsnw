@@ -1,9 +1,10 @@
 import React from 'react';
-import {View, Text, TouchableOpacity} from 'react-native';
+import {View, TouchableOpacity} from 'react-native';
 import {useTranslation} from 'react-i18next';
 import {useAppDispatch, useAppSelector} from '../../redux/hooks';
 import {changeLanguage} from '../../redux/slices/languageSlice';
 import {LANGUAGES} from '../../i18n';
+import Text from '../Text';
 
 const LanguageSelector: React.FC = () => {
   const {t} = useTranslation();
@@ -16,7 +17,10 @@ const LanguageSelector: React.FC = () => {
 
   return (
     <View className="flex flex-row items-center gap-2">
-      <Text className="text-sm text-gray-700 dark:text-gray-300">
+      <Text
+        size="sm"
+        weight="regular"
+        className="text-gray-700 dark:text-gray-300">
         {t('footer.language')}:
       </Text>
       <View className="flex flex-row gap-2">
@@ -28,7 +32,9 @@ const LanguageSelector: React.FC = () => {
           }`}
           onPress={() => handleLanguageChange(LANGUAGES.EN)}>
           <Text
-            className={`text-sm font-medium ${
+            size="sm"
+            weight="medium"
+            className={`${
               currentLanguage === LANGUAGES.EN
                 ? 'text-white'
                 : 'text-gray-800 dark:text-white'
@@ -44,7 +50,9 @@ const LanguageSelector: React.FC = () => {
           }`}
           onPress={() => handleLanguageChange(LANGUAGES.AR)}>
           <Text
-            className={`text-sm font-medium ${
+            size="sm"
+            weight="medium"
+            className={`${
               currentLanguage === LANGUAGES.AR
                 ? 'text-white'
                 : 'text-gray-800 dark:text-white'

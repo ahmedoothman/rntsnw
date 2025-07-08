@@ -39,6 +39,7 @@ module.exports = {
         danger: colors.error,
         muted: colors.neutral,
       },
+      // Removed fontFamily configuration - handle fonts in React Native components instead
     },
   },
   plugins: [],

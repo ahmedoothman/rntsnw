@@ -1,4 +1,11 @@
 import {colors, semanticColors} from './colors';
+import {
+  FONT_FAMILIES,
+  FONT_SIZES,
+  LINE_HEIGHTS,
+  getFontFamily,
+  getTextStyle,
+} from './fonts';
 
 // Type definitions for theme colors
 export type ColorScale = {
@@ -50,6 +57,15 @@ export const getSemanticColor = (
     ? semanticColors.light[colorName]
     : semanticColors.dark[colorName];
 };
+
+// Export font utilities
+export {
+  FONT_FAMILIES,
+  FONT_SIZES,
+  LINE_HEIGHTS,
+  getFontFamily,
+  getTextStyle,
+} from './fonts';
 
 // Theme configuration object
 export const theme: Theme = {
