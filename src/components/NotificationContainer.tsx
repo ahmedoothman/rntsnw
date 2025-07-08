@@ -134,6 +134,28 @@ const NotificationContainer: React.FC = () => {
   );
   const {hideNotification} = useNotification();
 
+  // Debug logging
+  useEffect(() => {
+    if (__DEV__) {
+      try {
+        const reactotron = require('../config/ReactotronConfig').default;
+        if (reactotron && reactotron.log) {
+          reactotron.log('🔔 NotificationContainer: notifications updated', {
+            count: notifications.length,
+            notifications: notifications.map(n => ({
+              id: n.id,
+              type: n.type,
+              message: n.message,
+              title: n.title,
+            })),
+          });
+        }
+      } catch (error) {
+        console.warn('Reactotron logging failed:', error);
+      }
+    }
+  }, [notifications]);
+
   return (
     <View style={styles.container}>
       {notifications.map(notification => (

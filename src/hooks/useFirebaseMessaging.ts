@@ -2,6 +2,7 @@ import {useEffect, useRef} from 'react';
 import {NavigationContainerRef} from '@react-navigation/native';
 import messaging from '@react-native-firebase/messaging';
 import notifee, {EventType} from '@notifee/react-native';
+import {useNotification} from './useNotification';
 import {
   initializeFirebaseMessaging,
   handleForegroundMessage,
@@ -29,6 +30,7 @@ const logToReactotron = (message: string, data?: unknown) => {
 export const useFirebaseMessaging = () => {
   const navigationRef =
     useRef<NavigationContainerRef<Record<string, object | undefined>>>(null);
+  const {showNotification} = useNotification();
 
   useEffect(() => {
     logToReactotron('🚀 Firebase Messaging Hook Initialized');
@@ -49,7 +51,26 @@ export const useFirebaseMessaging = () => {
     // Handle foreground messages
     const unsubscribeForeground = messaging().onMessage(async remoteMessage => {
       logToReactotron('📱 Foreground Message Received', remoteMessage);
+
+      // Handle the notification display using the service
       await handleForegroundMessage(remoteMessage);
+
+      // Handle Redux dispatch here in the hook using useNotification
+      console.log('bb:', remoteMessage);
+      const {notification} = remoteMessage;
+      if (notification) {
+        logToReactotron('🔄 Adding notification using useNotification hook');
+        // Dispatch the notification to Redux store
+        showNotification({
+          message: notification.body || 'No message',
+          type: 'info',
+          title: notification.title,
+        });
+
+        logToReactotron(
+          '✅ Notification added successfully via useNotification',
+        );
+      }
     });
 
     // Handle foreground notification events
@@ -90,7 +111,7 @@ export const useFirebaseMessaging = () => {
       unsubscribeForeground();
       unsubscribeNotifee();
     };
-  }, []);
+  }, [showNotification]);
 
   return {navigationRef};
 };

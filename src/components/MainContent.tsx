@@ -3,6 +3,7 @@ import {StatusBar, Animated, View, TouchableOpacity, Text} from 'react-native';
 import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
 import {useAppSelector, useAppDispatch} from '../redux/hooks';
 import {setLoadedLanguage} from '../redux/slices/languageSlice';
+import {addNotification} from '../redux/slices/notificationSlice';
 import {useTranslation} from 'react-i18next';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {useNotification} from '../hooks/useNotification';
@@ -83,6 +84,26 @@ const MainContent = (): React.JSX.Element => {
     });
   };
 
+  const triggerFirebaseStyleNotification = () => {
+    // Test the exact same dispatch that Firebase service uses
+    dispatch(
+      addNotification({
+        message: 'This simulates a Firebase notification body',
+        type: 'info',
+        title: 'Firebase Test',
+      }),
+    );
+  };
+
+  const simulateFirebaseMessage = () => {
+    // Simulate exactly what the useFirebaseMessaging hook does
+    showNotification({
+      message: 'Simulated Firebase message body',
+      type: 'info',
+      title: 'Simulated Firebase',
+    });
+  };
+
   return (
     <SafeAreaProvider>
       <SafeAreaView className="flex-1 bg-gray-50 dark:bg-gray-900">
@@ -97,19 +118,33 @@ const MainContent = (): React.JSX.Element => {
           <Footer />
         </Animated.ScrollView>
         {/* Test buttons for notifications */}
-        <View className="flex-row justify-center items-center gap-4 p-4">
+        <View className="flex-row justify-center items-center gap-1 p-4 flex-wrap">
           <TouchableOpacity
-            className="bg-green-500 px-3 py-4 rounded shadow-sm flex-1 max-w-64"
+            className="bg-green-500 px-2 py-3 rounded shadow-sm flex-1 min-w-24 max-w-32"
             onPress={triggerSuccessNotification}>
-            <Text className="text-white font-bold text-center text-lg">
+            <Text className="text-white font-bold text-center text-xs">
               Success
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
-            className="bg-red-500 px-3 py-4 rounded shadow-sm flex-1 max-w-64"
+            className="bg-red-500 px-2 py-3 rounded shadow-sm flex-1 min-w-24 max-w-32"
             onPress={triggerErrorNotification}>
-            <Text className="text-white font-bold text-center text-lg">
+            <Text className="text-white font-bold text-center text-xs">
               Error
+            </Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            className="bg-blue-500 px-2 py-3 rounded shadow-sm flex-1 min-w-24 max-w-32"
+            onPress={triggerFirebaseStyleNotification}>
+            <Text className="text-white font-bold text-center text-xs">
+              Firebase
+            </Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            className="bg-purple-500 px-2 py-3 rounded shadow-sm flex-1 min-w-24 max-w-32"
+            onPress={simulateFirebaseMessage}>
+            <Text className="text-white font-bold text-center text-xs">
+              Hook Test
             </Text>
           </TouchableOpacity>
         </View>
