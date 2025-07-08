@@ -20,7 +20,7 @@ export async function getFCMToken() {
   try {
     await requestUserPermission();
     const token = await messaging().getToken();
-    console.log('FCM Token:', token);
+    logToReactotron('🔑 FCM Token received:', token);
     return token;
   } catch (error) {
     console.error('Failed to get FCM token:', error);

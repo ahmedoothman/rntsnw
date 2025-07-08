@@ -56,7 +56,7 @@ export const useFirebaseMessaging = () => {
       await handleForegroundMessage(remoteMessage);
 
       // Handle Redux dispatch here in the hook using useNotification
-      console.log('bb:', remoteMessage);
+
       const {notification} = remoteMessage;
       if (notification) {
         logToReactotron('🔄 Adding notification using useNotification hook');
