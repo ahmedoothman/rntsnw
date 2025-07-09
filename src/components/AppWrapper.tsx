@@ -5,13 +5,22 @@ import LoadingScreen from './LoadingScreen';
 import NotificationContainer from './NotificationContainer';
 import {useI18nInitialization} from '../hooks/useI18nInitialization';
 import {useFirebaseMessaging} from '../hooks/useFirebaseMessaging';
+import {StatusBar} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 const AppWrapper: React.FC = () => {
   const {isI18nReady} = useI18nInitialization();
   useFirebaseMessaging();
   return (
     <ThemeProvider>
-      <SafeAreaView style={{flex: 1}} edges={['top', 'left', 'right']}>
+      <SafeAreaView
+        className="flex-1 bg-white"
+        edges={['top', 'left', 'right']}>
+        {/* StatusBar configuration */}
+        <StatusBar
+          barStyle="dark-content"
+          backgroundColor="white"
+          translucent={false}
+        />
         {/* SafeAreaView to ensure content is within safe area boundaries, excluding bottom for tab bar */}
         {!isI18nReady ? <LoadingScreen /> : <RootNavigator />}
         <NotificationContainer />
