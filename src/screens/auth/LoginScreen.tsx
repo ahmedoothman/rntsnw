@@ -9,8 +9,8 @@ import {
   KeyboardAvoidingView,
   Platform,
 } from 'react-native';
-import {useAppDispatch, useAppSelector} from '../../redux/hooks';
-import {login} from '../../redux/slices/authSlice';
+import {useAppDispatch, useAppSelector} from '@redux/hooks';
+import {login} from '@redux/slices/authSlice';
 import {useTranslation} from 'react-i18next';
 import {useNavigation} from '@react-navigation/native';
 

@@ -1,10 +1,10 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {useAppSelector} from '@redux/hooks';
-import HomeScreen from '@/screens/HomeScreen';
-import NotificationsScreen from '@screens/NotificationsScreen';
-import ProfileScreen from '@screens/ProfileScreen';
-import MainContent from '@screens/MainContent';
+import HomeScreen from '@/screens/bottom/HomeScreen';
+import NotificationsScreen from '@/screens/bottom/NotificationsScreen';
+import ProfileScreen from '@/screens/bottom/ProfileScreen';
+import MainContent from '@/screens/bottom/MainContent';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 const Tab = createBottomTabNavigator();
