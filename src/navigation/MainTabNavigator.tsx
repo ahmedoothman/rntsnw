@@ -5,6 +5,7 @@ import HomeScreen from '@/screens/bottom/HomeScreen';
 import NotificationsScreen from '@/screens/bottom/NotificationsScreen';
 import ProfileScreen from '@/screens/bottom/ProfileScreen';
 import MainContent from '@/screens/bottom/MainContent';
+import MapScreen from '@/screens/MapScreen';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 const Tab = createBottomTabNavigator();
@@ -29,6 +30,8 @@ const MainTabNavigator: React.FC = () => {
             iconName = focused ? 'home' : 'home-outline';
           } else if (route.name === 'MainContent') {
             iconName = focused ? 'grid' : 'grid-outline';
+          } else if (route.name === 'Map') {
+            iconName = focused ? 'map' : 'map-outline';
           } else if (route.name === 'Notifications') {
             iconName = focused ? 'notifications' : 'notifications-outline';
           } else if (route.name === 'Profile') {
@@ -68,6 +71,13 @@ const MainTabNavigator: React.FC = () => {
         component={MainContent}
         options={{
           tabBarLabel: 'Content',
+        }}
+      />
+      <Tab.Screen
+        name="Map"
+        component={MapScreen}
+        options={{
+          tabBarLabel: 'Map',
         }}
       />
       <Tab.Screen

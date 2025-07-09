@@ -1,5 +1,6 @@
 import React from 'react';
-import {View, Text, ScrollView, TouchableOpacity, Alert} from 'react-native';
+import {View, ScrollView, TouchableOpacity, Alert} from 'react-native';
+import Text from '@components/Text';
 import {useAppSelector, useAppDispatch} from '@redux/hooks';
 import {logout} from '@redux/slices/authSlice';
 import {toggleDarkMode} from '@redux/slices/themeSlice';
@@ -29,6 +30,7 @@ const ProfileOption: React.FC<ProfileOptionProps> = ({
           className={`text-base font-medium ${
             color ? '' : 'text-gray-900 dark:text-gray-50'
           }`}
+          weight="bold"
           style={color ? {color} : {}}>
           {title}
         </Text>
