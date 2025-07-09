@@ -1,21 +1,22 @@
 import React, {useState, useEffect} from 'react';
-import {StatusBar, Animated, View, TouchableOpacity, Text} from 'react-native';
+import {StatusBar, Animated, View, TouchableOpacity} from 'react-native';
+import Text from '@components/Text';
 import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
-import {useAppSelector, useAppDispatch} from '../redux/hooks';
-import {setLoadedLanguage} from '../redux/slices/languageSlice';
-import {addNotification} from '../redux/slices/notificationSlice';
+import {useAppSelector, useAppDispatch} from '@redux/hooks';
+import {setLoadedLanguage} from '@redux/slices/languageSlice';
+import {addNotification} from '@redux/slices/notificationSlice';
 import {useTranslation} from 'react-i18next';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import {useNotification} from '../hooks/useNotification';
+import {useNotification} from '@hooks/useNotification';
 
 // Import components
-import Header from './TemplateComponents/Header';
-import DeveloperProfile from './TemplateComponents/DeveloperProfile';
-import FeaturesSection from './TemplateComponents/FeaturesSection';
-import CallToAction from './TemplateComponents/CallToAction';
-import Footer from './TemplateComponents/Footer';
+import Header from '@components/TemplateComponents/Header';
+import DeveloperProfile from '@components/TemplateComponents/DeveloperProfile';
+import FeaturesSection from '@components/TemplateComponents/FeaturesSection';
+import CallToAction from '@components/TemplateComponents/CallToAction';
+import Footer from '@components/TemplateComponents/Footer';
 
-const MainContent = (): React.JSX.Element => {
+const HomeScreen = (): React.JSX.Element => {
   const {isDarkMode} = useAppSelector(state => state.theme);
   const {currentLanguage} = useAppSelector(state => state.language);
   const {i18n} = useTranslation();
@@ -153,4 +154,4 @@ const MainContent = (): React.JSX.Element => {
   );
 };
 
-export default MainContent;
+export default HomeScreen;

@@ -2,6 +2,7 @@ import {configureStore} from '@reduxjs/toolkit';
 import themeReducer from '../slices/themeSlice';
 import languageReducer from '../slices/languageSlice';
 import notificationReducer from '../slices/notificationSlice';
+import authReducer from '../slices/authSlice';
 
 const createStoreEnhancers = () => {
   const enhancers = [];
@@ -25,6 +26,7 @@ export const store = configureStore({
     theme: themeReducer,
     language: languageReducer,
     notification: notificationReducer,
+    auth: authReducer,
   },
   enhancers: getDefaultEnhancers =>
     getDefaultEnhancers().concat(createStoreEnhancers()),

@@ -7,11 +7,11 @@ import {
   initializeFirebaseMessaging,
   handleForegroundMessage,
   createNotificationChannel,
-} from '../services/firebaseService';
+} from '@services/firebaseService';
 import {
   setupBackgroundNotificationListeners,
   checkInitialNotification,
-} from '../utils/notificationUtils';
+} from '@utils/notificationUtils';
 
 // Reactotron logging helper
 const logToReactotron = (message: string, data?: unknown) => {
