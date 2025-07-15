@@ -2,9 +2,10 @@ import React from 'react';
 import {Text as RNText, TextProps, TextStyle} from 'react-native';
 import {useAppSelector} from '@redux/hooks';
 import {getFontFamily, FONT_SIZES} from '@theme/fonts';
+import type {FontWeight} from '@/types/fonts';
 
 interface CustomTextProps extends Omit<TextProps, 'style'> {
-  weight?: 'regular' | 'medium' | 'bold' | 'light';
+  weight?: FontWeight;
   size?: keyof typeof FONT_SIZES;
   children: React.ReactNode;
   className?: string;

@@ -1,24 +1,41 @@
 import {Platform} from 'react-native';
+import type {FontWeight, FontFamilies} from '@/types/fonts';
 
 // Font families for different languages
-export const FONT_FAMILIES = {
+export const FONT_FAMILIES: FontFamilies = {
   // English fonts
   en: {
     regular: Platform.select({
       ios: 'System', // Use system font on iOS
       android: 'Roboto', // Default Android font
     }),
+    light: Platform.select({
+      ios: 'System',
+      android: 'Roboto-Light',
+    }),
+    extraLight: Platform.select({
+      ios: 'System',
+      android: 'Roboto-Thin', // Use Thin variant for ExtraLight
+    }),
     medium: Platform.select({
       ios: 'System',
       android: 'Roboto-Medium',
+    }),
+    semiBold: Platform.select({
+      ios: 'System',
+      android: 'Roboto-Medium', // Use Medium for SemiBold fallback
     }),
     bold: Platform.select({
       ios: 'System',
       android: 'Roboto-Bold',
     }),
-    light: Platform.select({
+    extraBold: Platform.select({
       ios: 'System',
-      android: 'Roboto-Light',
+      android: 'Roboto-Black', // Use Black variant for ExtraBold
+    }),
+    black: Platform.select({
+      ios: 'System',
+      android: 'Roboto-Black',
     }),
   },
   // Arabic fonts
@@ -27,17 +44,33 @@ export const FONT_FAMILIES = {
       ios: 'Cairo-Regular', // Cairo font for iOS
       android: 'Cairo-Regular', // Cairo font for Android
     }),
+    light: Platform.select({
+      ios: 'Cairo-Light',
+      android: 'Cairo-Light',
+    }),
+    extraLight: Platform.select({
+      ios: 'Cairo-ExtraLight',
+      android: 'Cairo-ExtraLight',
+    }),
     medium: Platform.select({
       ios: 'Cairo-Medium',
       android: 'Cairo-Medium',
+    }),
+    semiBold: Platform.select({
+      ios: 'Cairo-SemiBold',
+      android: 'Cairo-SemiBold',
     }),
     bold: Platform.select({
       ios: 'Cairo-Bold',
       android: 'Cairo-Bold',
     }),
-    light: Platform.select({
-      ios: 'Cairo-Light',
-      android: 'Cairo-Light',
+    extraBold: Platform.select({
+      ios: 'Cairo-ExtraBold',
+      android: 'Cairo-ExtraBold',
+    }),
+    black: Platform.select({
+      ios: 'Cairo-Black',
+      android: 'Cairo-Black',
     }),
   },
 };
@@ -69,16 +102,16 @@ export const LINE_HEIGHTS = {
 // Helper function to get font family based on current language
 export const getFontFamily = (
   language: string,
-  weight: 'regular' | 'medium' | 'bold' | 'light' = 'regular',
+  weight: FontWeight = 'regular',
 ) => {
   const fontConfig = language === 'ar' ? FONT_FAMILIES.ar : FONT_FAMILIES.en;
-  return fontConfig[weight];
+  return fontConfig[weight] || fontConfig.regular;
 };
 
 // Text styles for different languages
 export const getTextStyle = (
   language: string,
-  weight: 'regular' | 'medium' | 'bold' | 'light' = 'regular',
+  weight: FontWeight = 'regular',
   size: keyof typeof FONT_SIZES = 'base',
 ) => ({
   fontFamily: getFontFamily(language, weight),
