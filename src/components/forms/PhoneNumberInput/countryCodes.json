@@ -1,0 +1,1312 @@
+[
+  {
+    "name": "Afghanistan",
+    "code": "+93",
+    "flag": "https://flagcdn.com/w320/af.png",
+    "enName": "Afghanistan",
+    "arName": "أفغانستان"
+  },
+  {
+    "name": "Albania",
+    "code": "+355",
+    "flag": "https://flagcdn.com/w320/al.png",
+    "enName": "Albania",
+    "arName": "ألبانيا"
+  },
+  {
+    "name": "Algeria",
+    "code": "+213",
+    "flag": "https://flagcdn.com/w320/dz.png",
+    "enName": "Algeria",
+    "arName": "الجزائر"
+  },
+  {
+    "name": "Andorra",
+    "code": "+376",
+    "flag": "https://flagcdn.com/w320/ad.png",
+    "enName": "Andorra",
+    "arName": "أندورا"
+  },
+  {
+    "name": "Angola",
+    "code": "+244",
+    "flag": "https://flagcdn.com/w320/ao.png",
+    "enName": "Angola",
+    "arName": "أنغولا"
+  },
+  {
+    "name": "Argentina",
+    "code": "+54",
+    "flag": "https://flagcdn.com/w320/ar.png",
+    "enName": "Argentina",
+    "arName": "الأرجنتين"
+  },
+  {
+    "name": "Armenia",
+    "code": "+374",
+    "flag": "https://flagcdn.com/w320/am.png",
+    "enName": "Armenia",
+    "arName": "أرمينيا"
+  },
+  {
+    "name": "Australia",
+    "code": "+61",
+    "flag": "https://flagcdn.com/w320/au.png",
+    "enName": "Australia",
+    "arName": "أستراليا"
+  },
+  {
+    "name": "Austria",
+    "code": "+43",
+    "flag": "https://flagcdn.com/w320/at.png",
+    "enName": "Austria",
+    "arName": "النمسا"
+  },
+  {
+    "name": "Azerbaijan",
+    "code": "+994",
+    "flag": "https://flagcdn.com/w320/az.png",
+    "enName": "Azerbaijan",
+    "arName": "أذربيجان"
+  },
+  {
+    "name": "Bahamas",
+    "code": "+1-242",
+    "flag": "https://flagcdn.com/w320/bs.png",
+    "enName": "Bahamas",
+    "arName": "باهاماس"
+  },
+  {
+    "name": "Bahrain",
+    "code": "+973",
+    "flag": "https://flagcdn.com/w320/bh.png",
+    "enName": "Bahrain",
+    "arName": "البحرين"
+  },
+  {
+    "name": "Bangladesh",
+    "code": "+880",
+    "flag": "https://flagcdn.com/w320/bd.png",
+    "enName": "Bangladesh",
+    "arName": "بنغلاديش"
+  },
+  {
+    "name": "Barbados",
+    "code": "+1-246",
+    "flag": "https://flagcdn.com/w320/bb.png",
+    "enName": "Barbados",
+    "arName": "بربادوس"
+  },
+  {
+    "name": "Belarus",
+    "code": "+375",
+    "flag": "https://flagcdn.com/w320/by.png",
+    "enName": "Belarus",
+    "arName": "بيلاروسيا"
+  },
+  {
+    "name": "Belgium",
+    "code": "+32",
+    "flag": "https://flagcdn.com/w320/be.png",
+    "enName": "Belgium",
+    "arName": "بلجيكا"
+  },
+  {
+    "name": "Belize",
+    "code": "+501",
+    "flag": "https://flagcdn.com/w320/bz.png",
+    "enName": "Belize",
+    "arName": "بليز"
+  },
+  {
+    "name": "Benin",
+    "code": "+229",
+    "flag": "https://flagcdn.com/w320/bj.png",
+    "enName": "Benin",
+    "arName": "بنين"
+  },
+  {
+    "name": "Bhutan",
+    "code": "+975",
+    "flag": "https://flagcdn.com/w320/bt.png",
+    "enName": "Bhutan",
+    "arName": "بوتان"
+  },
+  {
+    "name": "Bolivia",
+    "code": "+591",
+    "flag": "https://flagcdn.com/w320/bo.png",
+    "enName": "Bolivia",
+    "arName": "بوليفيا"
+  },
+  {
+    "name": "Bosnia and Herzegovina",
+    "code": "+387",
+    "flag": "https://flagcdn.com/w320/ba.png",
+    "enName": "Bosnia and Herzegovina",
+    "arName": "البوسنة والهرسك"
+  },
+  {
+    "name": "Botswana",
+    "code": "+267",
+    "flag": "https://flagcdn.com/w320/bw.png",
+    "enName": "Botswana",
+    "arName": "بوتسوانا"
+  },
+  {
+    "name": "Brazil",
+    "code": "+55",
+    "flag": "https://flagcdn.com/w320/br.png",
+    "enName": "Brazil",
+    "arName": "البرازيل"
+  },
+  {
+    "name": "Brunei",
+    "code": "+673",
+    "flag": "https://flagcdn.com/w320/bn.png",
+    "enName": "Brunei",
+    "arName": "بروناي"
+  },
+  {
+    "name": "Bulgaria",
+    "code": "+359",
+    "flag": "https://flagcdn.com/w320/bg.png",
+    "enName": "Bulgaria",
+    "arName": "بلغاريا"
+  },
+  {
+    "name": "Burkina Faso",
+    "code": "+226",
+    "flag": "https://flagcdn.com/w320/bf.png",
+    "enName": "Burkina Faso",
+    "arName": "بوركينا فاسو"
+  },
+  {
+    "name": "Burundi",
+    "code": "+257",
+    "flag": "https://flagcdn.com/w320/bi.png",
+    "enName": "Burundi",
+    "arName": "بوروندي"
+  },
+  {
+    "name": "Cambodia",
+    "code": "+855",
+    "flag": "https://flagcdn.com/w320/kh.png",
+    "enName": "Cambodia",
+    "arName": "كمبوديا"
+  },
+  {
+    "name": "Cameroon",
+    "code": "+237",
+    "flag": "https://flagcdn.com/w320/cm.png",
+    "enName": "Cameroon",
+    "arName": "الكاميرون"
+  },
+  {
+    "name": "Canada",
+    "code": "+1",
+    "flag": "https://flagcdn.com/w320/ca.png",
+    "enName": "Canada",
+    "arName": "كندا"
+  },
+  {
+    "name": "Cape Verde",
+    "code": "+238",
+    "flag": "https://flagcdn.com/w320/cv.png",
+    "enName": "Cape Verde",
+    "arName": "الرأس الأخضر"
+  },
+  {
+    "name": "Chad",
+    "code": "+235",
+    "flag": "https://flagcdn.com/w320/td.png",
+    "enName": "Chad",
+    "arName": "تشاد"
+  },
+  {
+    "name": "Chile",
+    "code": "+56",
+    "flag": "https://flagcdn.com/w320/cl.png",
+    "enName": "Chile",
+    "arName": "تشيلي"
+  },
+  {
+    "name": "China",
+    "code": "+86",
+    "flag": "https://flagcdn.com/w320/cn.png",
+    "enName": "China",
+    "arName": "الصين"
+  },
+  {
+    "name": "Colombia",
+    "code": "+57",
+    "flag": "https://flagcdn.com/w320/co.png",
+    "enName": "Colombia",
+    "arName": "كولومبيا"
+  },
+  {
+    "name": "Comoros",
+    "code": "+269",
+    "flag": "https://flagcdn.com/w320/km.png",
+    "enName": "Comoros",
+    "arName": "جزر القمر"
+  },
+  {
+    "name": "Congo (DRC)",
+    "code": "+243",
+    "flag": "https://flagcdn.com/w320/cd.png",
+    "enName": "Congo (DRC)",
+    "arName": "الكونغو (جمهورية ديموقراطية)"
+  },
+  {
+    "name": "Congo (Republic)",
+    "code": "+242",
+    "flag": "https://flagcdn.com/w320/cg.png",
+    "enName": "Congo (Republic)",
+    "arName": "الكونغو (جمهورية)"
+  },
+  {
+    "name": "Costa Rica",
+    "code": "+506",
+    "flag": "https://flagcdn.com/w320/cr.png",
+    "enName": "Costa Rica",
+    "arName": "كوستاريكا"
+  },
+  {
+    "name": "Croatia",
+    "code": "+385",
+    "flag": "https://flagcdn.com/w320/hr.png",
+    "enName": "Croatia",
+    "arName": "كرواتيا"
+  },
+  {
+    "name": "Cuba",
+    "code": "+53",
+    "flag": "https://flagcdn.com/w320/cu.png",
+    "enName": "Cuba",
+    "arName": "كوبا"
+  },
+  {
+    "name": "Cyprus",
+    "code": "+357",
+    "flag": "https://flagcdn.com/w320/cy.png",
+    "enName": "Cyprus",
+    "arName": "قبرص"
+  },
+  {
+    "name": "Czech Republic",
+    "code": "+420",
+    "flag": "https://flagcdn.com/w320/cz.png",
+    "enName": "Czech Republic",
+    "arName": "جمهورية التشيك"
+  },
+  {
+    "name": "Denmark",
+    "code": "+45",
+    "flag": "https://flagcdn.com/w320/dk.png",
+    "enName": "Denmark",
+    "arName": "الدنمارك"
+  },
+  {
+    "name": "Djibouti",
+    "code": "+253",
+    "flag": "https://flagcdn.com/w320/dj.png",
+    "enName": "Djibouti",
+    "arName": "جيبوتي"
+  },
+  {
+    "name": "Dominica",
+    "code": "+1-767",
+    "flag": "https://flagcdn.com/w320/dm.png",
+    "enName": "Dominica",
+    "arName": "دومينيكا"
+  },
+  {
+    "name": "Dominican Republic",
+    "code": "+1-809",
+    "flag": "https://flagcdn.com/w320/do.png",
+    "enName": "Dominican Republic",
+    "arName": "جمهورية الدومينيكان"
+  },
+  {
+    "name": "Ecuador",
+    "code": "+593",
+    "flag": "https://flagcdn.com/w320/ec.png",
+    "enName": "Ecuador",
+    "arName": "الإكوادور"
+  },
+  {
+    "name": "Egypt",
+    "code": "+20",
+    "flag": "https://flagcdn.com/w320/eg.png",
+    "enName": "Egypt",
+    "arName": "مصر"
+  },
+  {
+    "name": "El Salvador",
+    "code": "+503",
+    "flag": "https://flagcdn.com/w320/sv.png",
+    "enName": "El Salvador",
+    "arName": "السلفادور"
+  },
+  {
+    "name": "Estonia",
+    "code": "+372",
+    "flag": "https://flagcdn.com/w320/ee.png",
+    "enName": "Estonia",
+    "arName": "إستونيا"
+  },
+  {
+    "name": "Eswatini",
+    "code": "+268",
+    "flag": "https://flagcdn.com/w320/sz.png",
+    "enName": "Eswatini",
+    "arName": "إسواتيني"
+  },
+  {
+    "name": "Ethiopia",
+    "code": "+251",
+    "flag": "https://flagcdn.com/w320/et.png",
+    "enName": "Ethiopia",
+    "arName": "إثيوبيا"
+  },
+  {
+    "name": "Fiji",
+    "code": "+679",
+    "flag": "https://flagcdn.com/w320/fj.png",
+    "enName": "Fiji",
+    "arName": "فيجي"
+  },
+  {
+    "name": "Finland",
+    "code": "+358",
+    "flag": "https://flagcdn.com/w320/fi.png",
+    "enName": "Finland",
+    "arName": "فنلندا"
+  },
+  {
+    "name": "France",
+    "code": "+33",
+    "flag": "https://flagcdn.com/w320/fr.png",
+    "enName": "France",
+    "arName": "فرنسا"
+  },
+  {
+    "name": "Gabon",
+    "code": "+241",
+    "flag": "https://flagcdn.com/w320/ga.png",
+    "enName": "Gabon",
+    "arName": "الغابون"
+  },
+  {
+    "name": "Gambia",
+    "code": "+220",
+    "flag": "https://flagcdn.com/w320/gm.png",
+    "enName": "Gambia",
+    "arName": "غامبيا"
+  },
+  {
+    "name": "Georgia",
+    "code": "+995",
+    "flag": "https://flagcdn.com/w320/ge.png",
+    "enName": "Georgia",
+    "arName": "جورجيا"
+  },
+  {
+    "name": "Germany",
+    "code": "+49",
+    "flag": "https://flagcdn.com/w320/de.png",
+    "enName": "Germany",
+    "arName": "ألمانيا"
+  },
+  {
+    "name": "Ghana",
+    "code": "+233",
+    "flag": "https://flagcdn.com/w320/gh.png",
+    "enName": "Ghana",
+    "arName": "غانا"
+  },
+  {
+    "name": "Greece",
+    "code": "+30",
+    "flag": "https://flagcdn.com/w320/gr.png",
+    "enName": "Greece",
+    "arName": "اليونان"
+  },
+  {
+    "name": "Grenada",
+    "code": "+1-473",
+    "flag": "https://flagcdn.com/w320/gd.png",
+    "enName": "Grenada",
+    "arName": "غرينادا"
+  },
+  {
+    "name": "Guatemala",
+    "code": "+502",
+    "flag": "https://flagcdn.com/w320/gt.png",
+    "enName": "Guatemala",
+    "arName": "غواتيمالا"
+  },
+  {
+    "name": "Guinea",
+    "code": "+224",
+    "flag": "https://flagcdn.com/w320/gn.png",
+    "enName": "Guinea",
+    "arName": "غينيا"
+  },
+  {
+    "name": "Guinea-Bissau",
+    "code": "+245",
+    "flag": "https://flagcdn.com/w320/gw.png",
+    "enName": "Guinea-Bissau",
+    "arName": "غينيا بيساو"
+  },
+  {
+    "name": "Guyana",
+    "code": "+592",
+    "flag": "https://flagcdn.com/w320/gy.png",
+    "enName": "Guyana",
+    "arName": "غيانا"
+  },
+  {
+    "name": "Haiti",
+    "code": "+509",
+    "flag": "https://flagcdn.com/w320/ht.png",
+    "enName": "Haiti",
+    "arName": "هايتي"
+  },
+  {
+    "name": "Honduras",
+    "code": "+504",
+    "flag": "https://flagcdn.com/w320/hn.png",
+    "enName": "Honduras",
+    "arName": "هندوراس"
+  },
+  {
+    "name": "Hungary",
+    "code": "+36",
+    "flag": "https://flagcdn.com/w320/hu.png",
+    "enName": "Hungary",
+    "arName": "هنغاريا"
+  },
+  {
+    "name": "Iceland",
+    "code": "+354",
+    "flag": "https://flagcdn.com/w320/is.png",
+    "enName": "Iceland",
+    "arName": "آيسلندا"
+  },
+  {
+    "name": "India",
+    "code": "+91",
+    "flag": "https://flagcdn.com/w320/in.png",
+    "enName": "India",
+    "arName": "الهند"
+  },
+  {
+    "name": "Indonesia",
+    "code": "+62",
+    "flag": "https://flagcdn.com/w320/id.png",
+    "enName": "Indonesia",
+    "arName": "إندونيسيا"
+  },
+  {
+    "name": "Iran",
+    "code": "+98",
+    "flag": "https://flagcdn.com/w320/ir.png",
+    "enName": "Iran",
+    "arName": "إيران"
+  },
+  {
+    "name": "Iraq",
+    "code": "+964",
+    "flag": "https://flagcdn.com/w320/iq.png",
+    "enName": "Iraq",
+    "arName": "العراق"
+  },
+  {
+    "name": "Ireland",
+    "code": "+353",
+    "flag": "https://flagcdn.com/w320/ie.png",
+    "enName": "Ireland",
+    "arName": "أيرلندا"
+  },
+  {
+    "name": "Italy",
+    "code": "+39",
+    "flag": "https://flagcdn.com/w320/it.png",
+    "enName": "Italy",
+    "arName": "إيطاليا"
+  },
+  {
+    "name": "Jamaica",
+    "code": "+1-876",
+    "flag": "https://flagcdn.com/w320/jm.png",
+    "enName": "Jamaica",
+    "arName": "جامايكا"
+  },
+  {
+    "name": "Japan",
+    "code": "+81",
+    "flag": "https://flagcdn.com/w320/jp.png",
+    "enName": "Japan",
+    "arName": "اليابان"
+  },
+  {
+    "name": "Jordan",
+    "code": "+962",
+    "flag": "https://flagcdn.com/w320/jo.png",
+    "enName": "Jordan",
+    "arName": "الأردن"
+  },
+  {
+    "name": "Kazakhstan",
+    "code": "+7",
+    "flag": "https://flagcdn.com/w320/kz.png",
+    "enName": "Kazakhstan",
+    "arName": "كازاخستان"
+  },
+  {
+    "name": "Kenya",
+    "code": "+254",
+    "flag": "https://flagcdn.com/w320/ke.png",
+    "enName": "Kenya",
+    "arName": "كينيا"
+  },
+  {
+    "name": "Kiribati",
+    "code": "+686",
+    "flag": "https://flagcdn.com/w320/ki.png",
+    "enName": "Kiribati",
+    "arName": "كيريباس"
+  },
+  {
+    "name": "Korea (North)",
+    "code": "+850",
+    "flag": "https://flagcdn.com/w320/kp.png",
+    "enName": "Korea (North)",
+    "arName": "كوريا الشمالية"
+  },
+  {
+    "name": "Korea (South)",
+    "code": "+82",
+    "flag": "https://flagcdn.com/w320/kr.png",
+    "enName": "Korea (South)",
+    "arName": "كوريا الجنوبية"
+  },
+  {
+    "name": "Kuwait",
+    "code": "+965",
+    "flag": "https://flagcdn.com/w320/kw.png",
+    "enName": "Kuwait",
+    "arName": "الكويت"
+  },
+  {
+    "name": "Kyrgyzstan",
+    "code": "+996",
+    "flag": "https://flagcdn.com/w320/kg.png",
+    "enName": "Kyrgyzstan",
+    "arName": "قرغيزستان"
+  },
+  {
+    "name": "Laos",
+    "code": "+856",
+    "flag": "https://flagcdn.com/w320/la.png",
+    "enName": "Laos",
+    "arName": "لاوس"
+  },
+  {
+    "name": "Latvia",
+    "code": "+371",
+    "flag": "https://flagcdn.com/w320/lv.png",
+    "enName": "Latvia",
+    "arName": "لاتفيا"
+  },
+  {
+    "name": "Lebanon",
+    "code": "+961",
+    "flag": "https://flagcdn.com/w320/lb.png",
+    "enName": "Lebanon",
+    "arName": "لبنان"
+  },
+  {
+    "name": "Lesotho",
+    "code": "+266",
+    "flag": "https://flagcdn.com/w320/ls.png",
+    "enName": "Lesotho",
+    "arName": "ليسوتو"
+  },
+  {
+    "name": "Liberia",
+    "code": "+231",
+    "flag": "https://flagcdn.com/w320/lr.png",
+    "enName": "Liberia",
+    "arName": "ليبيريا"
+  },
+  {
+    "name": "Libya",
+    "code": "+218",
+    "flag": "https://flagcdn.com/w320/ly.png",
+    "enName": "Libya",
+    "arName": "ليبيا"
+  },
+  {
+    "name": "Liechtenstein",
+    "code": "+423",
+    "flag": "https://flagcdn.com/w320/li.png",
+    "enName": "Liechtenstein",
+    "arName": "ليختنشتاين"
+  },
+  {
+    "name": "Lithuania",
+    "code": "+370",
+    "flag": "https://flagcdn.com/w320/lt.png",
+    "enName": "Lithuania",
+    "arName": "ليتوانيا"
+  },
+  {
+    "name": "Luxembourg",
+    "code": "+352",
+    "flag": "https://flagcdn.com/w320/lu.png",
+    "enName": "Luxembourg",
+    "arName": "لوكسمبورغ"
+  },
+  {
+    "name": "Madagascar",
+    "code": "+261",
+    "flag": "https://flagcdn.com/w320/mg.png",
+    "enName": "Madagascar",
+    "arName": "مدغشقر"
+  },
+  {
+    "name": "Malawi",
+    "code": "+265",
+    "flag": "https://flagcdn.com/w320/mw.png",
+    "enName": "Malawi",
+    "arName": "مالاوي"
+  },
+  {
+    "name": "Malaysia",
+    "code": "+60",
+    "flag": "https://flagcdn.com/w320/my.png",
+    "enName": "Malaysia",
+    "arName": "ماليزيا"
+  },
+  {
+    "name": "Maldives",
+    "code": "+960",
+    "flag": "https://flagcdn.com/w320/mv.png",
+    "enName": "Maldives",
+    "arName": "المالديف"
+  },
+  {
+    "name": "Mali",
+    "code": "+223",
+    "flag": "https://flagcdn.com/w320/ml.png",
+    "enName": "Mali",
+    "arName": "مالي"
+  },
+  {
+    "name": "Malta",
+    "code": "+356",
+    "flag": "https://flagcdn.com/w320/mt.png",
+    "enName": "Malta",
+    "arName": "مالطا"
+  },
+  {
+    "name": "Marshall Islands",
+    "code": "+692",
+    "flag": "https://flagcdn.com/w320/mh.png",
+    "enName": "Marshall Islands",
+    "arName": "جزر مارشال"
+  },
+  {
+    "name": "Mauritania",
+    "code": "+222",
+    "flag": "https://flagcdn.com/w320/mr.png",
+    "enName": "Mauritania",
+    "arName": "موريتانيا"
+  },
+  {
+    "name": "Mauritius",
+    "code": "+230",
+    "flag": "https://flagcdn.com/w320/mu.png",
+    "enName": "Mauritius",
+    "arName": "موريشيوس"
+  },
+  {
+    "name": "Mexico",
+    "code": "+52",
+    "flag": "https://flagcdn.com/w320/mx.png",
+    "enName": "Mexico",
+    "arName": "المكسيك"
+  },
+  {
+    "name": "Micronesia",
+    "code": "+691",
+    "flag": "https://flagcdn.com/w320/fm.png",
+    "enName": "Micronesia",
+    "arName": "ميكرونيزيا"
+  },
+  {
+    "name": "Moldova",
+    "code": "+373",
+    "flag": "https://flagcdn.com/w320/md.png",
+    "enName": "Moldova",
+    "arName": "مولدوفا"
+  },
+  {
+    "name": "Monaco",
+    "code": "+377",
+    "flag": "https://flagcdn.com/w320/mc.png",
+    "enName": "Monaco",
+    "arName": "موناكو"
+  },
+  {
+    "name": "Mongolia",
+    "code": "+976",
+    "flag": "https://flagcdn.com/w320/mn.png",
+    "enName": "Mongolia",
+    "arName": "منغوليا"
+  },
+  {
+    "name": "Montenegro",
+    "code": "+382",
+    "flag": "https://flagcdn.com/w320/me.png",
+    "enName": "Montenegro",
+    "arName": "الجبل الأسود"
+  },
+  {
+    "name": "Morocco",
+    "code": "+212",
+    "flag": "https://flagcdn.com/w320/ma.png",
+    "enName": "Morocco",
+    "arName": "المغرب"
+  },
+  {
+    "name": "Mozambique",
+    "code": "+258",
+    "flag": "https://flagcdn.com/w320/mz.png",
+    "enName": "Mozambique",
+    "arName": "موزمبيق"
+  },
+  {
+    "name": "Myanmar",
+    "code": "+95",
+    "flag": "https://flagcdn.com/w320/mm.png",
+    "enName": "Myanmar",
+    "arName": "ميانمار"
+  },
+  {
+    "name": "Namibia",
+    "code": "+264",
+    "flag": "https://flagcdn.com/w320/na.png",
+    "enName": "Namibia",
+    "arName": "ناميبيا"
+  },
+  {
+    "name": "Nauru",
+    "code": "+674",
+    "flag": "https://flagcdn.com/w320/NR.png",
+    "enName": "Nauru",
+    "arName": "ناورو"
+  },
+  {
+    "name": "Nepal",
+    "code": "+977",
+    "flag": "https://flagcdn.com/w320/np.png",
+    "enName": "Nepal",
+    "arName": "نيبال"
+  },
+  {
+    "name": "Nicaragua",
+    "code": "+505",
+    "flag": "https://flagcdn.com/w320/ni.png",
+    "enName": "Nicaragua",
+    "arName": "نيكاراغوا"
+  },
+  {
+    "name": "Niger",
+    "code": "+227",
+    "flag": "https://flagcdn.com/w320/ne.png",
+    "enName": "Niger",
+    "arName": "النيجر"
+  },
+  {
+    "name": "Nigeria",
+    "code": "+234",
+    "flag": "https://flagcdn.com/w320/ng.png",
+    "enName": "Nigeria",
+    "arName": "نيجيريا"
+  },
+  {
+    "name": "North Macedonia",
+    "code": "+389",
+    "flag": "https://flagcdn.com/w320/mk.png",
+    "enName": "North Macedonia",
+    "arName": "مقدونيا الشمالية"
+  },
+  {
+    "name": "Norway",
+    "code": "+47",
+    "flag": "https://flagcdn.com/w320/no.png",
+    "enName": "Norway",
+    "arName": "النرويج"
+  },
+
+  {
+    "name": "Oman",
+    "code": "+968",
+    "flag": "https://flagcdn.com/w320/om.png",
+    "enName": "Oman",
+    "arName": "عمان"
+  },
+  {
+    "name": "Palestine",
+    "code": "+970",
+    "flag": "https://flagcdn.com/w320/ps.png",
+    "enName": "Palestine",
+    "arName": "فلسطين"
+  },
+  {
+    "name": "Pakistan",
+    "code": "+92",
+    "flag": "https://flagcdn.com/w320/pk.png",
+    "enName": "Pakistan",
+    "arName": "باكستان"
+  },
+  {
+    "name": "Palau",
+    "code": "+680",
+    "flag": "https://flagcdn.com/w320/pw.png",
+    "enName": "Palau",
+    "arName": "بالاو"
+  },
+  {
+    "name": "Panama",
+    "code": "+507",
+    "flag": "https://flagcdn.com/w320/pa.png",
+    "enName": "Panama",
+    "arName": "بنما"
+  },
+  {
+    "name": "Papua New Guinea",
+    "code": "+675",
+    "flag": "https://flagcdn.com/w320/pg.png",
+    "enName": "Papua New Guinea",
+    "arName": "بابوا غينيا الجديدة"
+  },
+  {
+    "name": "Paraguay",
+    "code": "+595",
+    "flag": "https://flagcdn.com/w320/py.png",
+    "enName": "Paraguay",
+    "arName": "باراغواي"
+  },
+  {
+    "name": "Peru",
+    "code": "+51",
+    "flag": "https://flagcdn.com/w320/pe.png",
+    "enName": "Peru",
+    "arName": "بيرو"
+  },
+  {
+    "name": "Philippines",
+    "code": "+63",
+    "flag": "https://flagcdn.com/w320/ph.png",
+    "enName": "Philippines",
+    "arName": "الفلبين"
+  },
+  {
+    "name": "Poland",
+    "code": "+48",
+    "flag": "https://flagcdn.com/w320/pl.png",
+    "enName": "Poland",
+    "arName": "بولندا"
+  },
+  {
+    "name": "Portugal",
+    "code": "+351",
+    "flag": "https://flagcdn.com/w320/pt.png",
+    "enName": "Portugal",
+    "arName": "البرتغال"
+  },
+  {
+    "name": "Qatar",
+    "code": "+974",
+    "flag": "https://flagcdn.com/w320/qa.png",
+    "enName": "Qatar",
+    "arName": "قطر"
+  },
+  {
+    "name": "Romania",
+    "code": "+40",
+    "flag": "https://flagcdn.com/w320/ro.png",
+    "enName": "Romania",
+    "arName": "رومانيا"
+  },
+  {
+    "name": "Russia",
+    "code": "+7",
+    "flag": "https://flagcdn.com/w320/ru.png",
+    "enName": "Russia",
+    "arName": "روسيا"
+  },
+  {
+    "name": "Rwanda",
+    "code": "+250",
+    "flag": "https://flagcdn.com/w320/rw.png",
+    "enName": "Rwanda",
+    "arName": "رواندا"
+  },
+  {
+    "name": "Saint Kitts and Nevis",
+    "code": "+1-869",
+    "flag": "https://flagcdn.com/w320/kn.png",
+    "enName": "Saint Kitts and Nevis",
+    "arName": "سانت كيتس ونيفيس"
+  },
+  {
+    "name": "Saint Lucia",
+    "code": "+1-758",
+    "flag": "https://flagcdn.com/w320/lc.png",
+    "enName": "Saint Lucia",
+    "arName": "سانت لوسيا"
+  },
+  {
+    "name": "Saint Vincent and the Grenadines",
+    "code": "+1-784",
+    "flag": "https://flagcdn.com/w320/vc.png",
+    "enName": "Saint Vincent and the Grenadines",
+    "arName": "سانت فنسنت والغرينادين"
+  },
+  {
+    "name": "Samoa",
+    "code": "+685",
+    "flag": "https://flagcdn.com/w320/ws.png",
+    "enName": "Samoa",
+    "arName": "ساموا"
+  },
+  {
+    "name": "San Marino",
+    "code": "+378",
+    "flag": "https://flagcdn.com/w320/sm.png",
+    "enName": "San Marino",
+    "arName": "سان مارينو"
+  },
+  {
+    "name": "Sao Tome and Principe",
+    "code": "+239",
+    "flag": "https://flagcdn.com/w320/st.png",
+    "enName": "Sao Tome and Principe",
+    "arName": "ساو تومي وبرينسيب"
+  },
+  {
+    "name": "Saudi Arabia",
+    "code": "+966",
+    "flag": "https://flagcdn.com/w320/sa.png",
+    "enName": "Saudi Arabia",
+    "arName": "المملكة العربية السعودية"
+  },
+  {
+    "name": "Senegal",
+    "code": "+221",
+    "flag": "https://flagcdn.com/w320/sn.png",
+    "enName": "Senegal",
+    "arName": "السنغال"
+  },
+  {
+    "name": "Serbia",
+    "code": "+381",
+    "flag": "https://flagcdn.com/w320/rs.png",
+    "enName": "Serbia",
+    "arName": "صربيا"
+  },
+  {
+    "name": "Seychelles",
+    "code": "+248",
+    "flag": "https://flagcdn.com/w320/sc.png",
+    "enName": "Seychelles",
+    "arName": "سيشل"
+  },
+  {
+    "name": "Sierra Leone",
+    "code": "+232",
+    "flag": "https://flagcdn.com/w320/sl.png",
+    "enName": "Sierra Leone",
+    "arName": "سيراليون"
+  },
+  {
+    "name": "Singapore",
+    "code": "+65",
+    "flag": "https://flagcdn.com/w320/sg.png",
+    "enName": "Singapore",
+    "arName": "سنغافورة"
+  },
+  {
+    "name": "Slovakia",
+    "code": "+421",
+    "flag": "https://flagcdn.com/w320/sk.png",
+    "enName": "Slovakia",
+    "arName": "سلوفاكيا"
+  },
+  {
+    "name": "Slovenia",
+    "code": "+386",
+    "flag": "https://flagcdn.com/w320/si.png",
+    "enName": "Slovenia",
+    "arName": "سلوفينيا"
+  },
+  {
+    "name": "Solomon Islands",
+    "code": "+677",
+    "flag": "https://flagcdn.com/w320/sb.png",
+    "enName": "Solomon Islands",
+    "arName": "جزر سليمان"
+  },
+  {
+    "name": "Somalia",
+    "code": "+252",
+    "flag": "https://flagcdn.com/w320/so.png",
+    "enName": "Somalia",
+    "arName": "الصومال"
+  },
+  {
+    "name": "South Africa",
+    "code": "+27",
+    "flag": "https://flagcdn.com/w320/za.png",
+    "enName": "South Africa",
+    "arName": "جنوب أفريقيا"
+  },
+  {
+    "name": "South Sudan",
+    "code": "+211",
+    "flag": "https://flagcdn.com/w320/ss.png",
+    "enName": "South Sudan",
+    "arName": "جنوب السودان"
+  },
+  {
+    "name": "Spain",
+    "code": "+34",
+    "flag": "https://flagcdn.com/w320/es.png",
+    "enName": "Spain",
+    "arName": "إسبانيا"
+  },
+  {
+    "name": "Sri Lanka",
+    "code": "+94",
+    "flag": "https://flagcdn.com/w320/lk.png",
+    "enName": "Sri Lanka",
+    "arName": "سريلانكا"
+  },
+  {
+    "name": "Sudan",
+    "code": "+249",
+    "flag": "https://flagcdn.com/w320/sd.png",
+    "enName": "Sudan",
+    "arName": "السودان"
+  },
+  {
+    "name": "Suriname",
+    "code": "+597",
+    "flag": "https://flagcdn.com/w320/sr.png",
+    "enName": "Suriname",
+    "arName": "سورينام"
+  },
+  {
+    "name": "Sweden",
+    "code": "+46",
+    "flag": "https://flagcdn.com/w320/se.png",
+    "enName": "Sweden",
+    "arName": "السويد"
+  },
+  {
+    "name": "Switzerland",
+    "code": "+41",
+    "flag": "https://flagcdn.com/w320/ch.png",
+    "enName": "Switzerland",
+    "arName": "سويسرا"
+  },
+  {
+    "name": "Syria",
+    "code": "+963",
+    "flag": "https://flagcdn.com/w320/sy.png",
+    "enName": "Syria",
+    "arName": "سوريا"
+  },
+  {
+    "name": "Tajikistan",
+    "code": "+992",
+    "flag": "https://flagcdn.com/w320/tj.png",
+    "enName": "Tajikistan",
+    "arName": "طاجيكستان"
+  },
+  {
+    "name": "Tanzania",
+    "code": "+255",
+    "flag": "https://flagcdn.com/w320/tz.png",
+    "enName": "Tanzania",
+    "arName": "تنزانيا"
+  },
+  {
+    "name": "Thailand",
+    "code": "+66",
+    "flag": "https://flagcdn.com/w320/th.png",
+    "enName": "Thailand",
+    "arName": "تايلاند"
+  },
+  {
+    "name": "Timor-Leste",
+    "code": "+670",
+    "flag": "https://flagcdn.com/w320/tl.png",
+    "enName": "Timor-Leste",
+    "arName": "تيمور الشرقية"
+  },
+  {
+    "name": "Togo",
+    "code": "+228",
+    "flag": "https://flagcdn.com/w320/tg.png",
+    "enName": "Togo",
+    "arName": "توغو"
+  },
+  {
+    "name": "Tonga",
+    "code": "+676",
+    "flag": "https://flagcdn.com/w320/to.png",
+    "enName": "Tonga",
+    "arName": "تونغا"
+  },
+  {
+    "name": "Trinidad and Tobago",
+    "code": "+1-868",
+    "flag": "https://flagcdn.com/w320/tt.png",
+    "enName": "Trinidad and Tobago",
+    "arName": "ترينيداد وتوباغو"
+  },
+  {
+    "name": "Tunisia",
+    "code": "+216",
+    "flag": "https://flagcdn.com/w320/tn.png",
+    "enName": "Tunisia",
+    "arName": "تونس"
+  },
+  {
+    "name": "Turkey",
+    "code": "+90",
+    "flag": "https://flagcdn.com/w320/tr.png",
+    "enName": "Turkey",
+    "arName": "تركيا"
+  },
+  {
+    "name": "Turkmenistan",
+    "code": "+993",
+    "flag": "https://flagcdn.com/w320/tm.png",
+    "enName": "Turkmenistan",
+    "arName": "تركمانستان"
+  },
+  {
+    "name": "Tuvalu",
+    "code": "+688",
+    "flag": "https://flagcdn.com/w320/tv.png",
+    "enName": "Tuvalu",
+    "arName": "توفالو"
+  },
+  {
+    "name": "Uganda",
+    "code": "+256",
+    "flag": "https://flagcdn.com/w320/ug.png",
+    "enName": "Uganda",
+    "arName": "أوغندا"
+  },
+  {
+    "name": "Ukraine",
+    "code": "+380",
+    "flag": "https://flagcdn.com/w320/ua.png",
+    "enName": "Ukraine",
+    "arName": "أوكرانيا"
+  },
+  {
+    "name": "United Arab Emirates",
+    "code": "+971",
+    "flag": "https://flagcdn.com/w320/ae.png",
+    "enName": "United Arab Emirates",
+    "arName": "الإمارات العربية المتحدة"
+  },
+  {
+    "name": "United Kingdom",
+    "code": "+44",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "enName": "United Kingdom",
+    "arName": "المملكة المتحدة"
+  },
+  {
+    "name": "United States",
+    "code": "+1",
+    "flag": "https://flagcdn.com/w320/us.png",
+    "enName": "United States",
+    "arName": "الولايات المتحدة"
+  },
+  {
+    "name": "Uruguay",
+    "code": "+598",
+    "flag": "https://flagcdn.com/w320/uy.png",
+    "enName": "Uruguay",
+    "arName": "أوروغواي"
+  },
+  {
+    "name": "Uzbekistan",
+    "code": "+998",
+    "flag": "https://flagcdn.com/w320/uz.png",
+    "enName": "Uzbekistan",
+    "arName": "أوزبكستان"
+  },
+  {
+    "name": "Vanuatu",
+    "code": "+678",
+    "flag": "https://flagcdn.com/w320/vu.png",
+    "enName": "Vanuatu",
+    "arName": "فانواتو"
+  },
+  {
+    "name": "Vatican City",
+    "code": "+379",
+    "flag": "https://flagcdn.com/w320/va.png",
+    "enName": "Vatican City",
+    "arName": "الفاتيكان"
+  },
+  {
+    "name": "Venezuela",
+    "code": "+58",
+    "flag": "https://flagcdn.com/w320/ve.png",
+    "enName": "Venezuela",
+    "arName": "فنزويلا"
+  },
+  {
+    "name": "Vietnam",
+    "code": "+84",
+    "flag": "https://flagcdn.com/w320/vn.png",
+    "enName": "Vietnam",
+    "arName": "فيتنام"
+  },
+  {
+    "name": "Yemen",
+    "code": "+967",
+    "flag": "https://flagcdn.com/w320/ye.png",
+    "enName": "Yemen",
+    "arName": "اليمن"
+  },
+  {
+    "name": "Zambia",
+    "code": "+260",
+    "flag": "https://flagcdn.com/w320/zm.png",
+    "enName": "Zambia",
+    "arName": "زامبيا"
+  },
+  {
+    "name": "Zimbabwe",
+    "code": "+263",
+    "flag": "https://flagcdn.com/w320/zw.png",
+    "enName": "Zimbabwe",
+    "arName": "زيمبابوي"
+  }
+]
